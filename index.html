@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/Yello.png" type="image/icon type">
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Customize umbrella</title>
+</head>
+<body>
+    <!-- Main container for the layout -->
+    <div class="container">
+        <!-- Container for the umbrella image and related elements -->
+        <div class="image-container">
+            <!-- Loader container, hidden by default, shown during theme changes -->
+            <div id="loader-container" class="loader-container">
+                <img src="./assets/loader_icon.svg" alt="loader" width="100px">
+            </div>
+            <!-- Container for the uploaded logo -->
+            <div id="logo-container" class="logo-container">
+                <!-- Image element for the uploaded logo -->
+                <img id="uploaded-logo" class="uploaded-logo" src="" alt="" width="50px">
+            </div>
+            <!-- Image element for the umbrella -->
+            <img id="umbrella-image" class="umbrella-image" src="./assets/Blue.png" alt="blue umbrella">
+        </div>
+        <!-- Container for theme selection and upload options -->
+        <div class="themes-container">
+            <h1>Custom Umbrella</h1>
+            <!-- Container for theme color options -->
+            <div class="themes">
+                <!-- Blue theme button -->
+                <!-- <button id="blue-theme"> -->
+                <img id="blue-theme"src="./icons/blue-icon.ico" alt="blue theme">
+                <!-- </button> -->
+                <!-- Yellow theme button -->
+                <!-- <button id="yellow-theme"> -->
+                <img id="yellow-theme"src="./icons/yellow-icon.ico" alt="yellow theme">
+                <!-- </button> -->
+                <!-- Pink theme button -->
+                <!-- <button id="pink-theme"> -->
+                <img id="pink-theme"src="./icons/pink-icon.ico" alt="pink theme">
+                <!-- </button> -->
+                <!-- Text explaining customization options -->
+                <div class="pera">
+                    <h3>Customize your umbrella</h3>
+                    <p>
+                        Upload a logo for an instant preview. <br>
+                        .png and .jpg files only. Max file size 5MB.
+                    </p>
+                </div>
+                <!-- Container for the upload button -->
+                <div class="upload-button">
+                    <!-- Hidden file input for logo upload -->
+                    <input type="file" id="logo-upload-input" accept=".png,.jpg" style="display:none">
+                    <!-- Button to trigger file input -->
+                    <button id="logo-upload-button">
+                        <img src="./assets/upload_icon.svg" alt="upload logo" style="align-self: start;">
+                        Upload Logo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
